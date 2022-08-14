@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+        Perfomace Fitness
+    </title>
+    <!-- Logo abaixo estão as CSS!!!-->
+    <style type="text/css">
+    /* Hack de Inicio de CSS */
+    html {
+        /* Box Model Fix (arrumar) 
+            Esse ajuste permite que adicione pedding e border sem a altura (height) e largura (wigth) do elemento*/
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        background-color: #e4e4e4;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    header {
+        /*cor de fundo*/
+        background-color: #fff;
+        /*Margem interna de um elemento*/
+        /* Padding com 2 valores, significa que o 1º valor é CIMA E BAIXO. O 2º valor é ESQUERDA E DIREITA*/
+        padding: 25px 0;
+        padding-left: 40px;
+
+        /* atributo largura*/
+        width: 900px;
+        height: 150px;
+        /*Centralizar a página*/
+        margin: 0 auto;
+    }
+
+    header img {
+        /*atributo altura*/
+        height: 100px;
+    }
+
+    nav {
+        height: 50px;
+        width: 900px;
+        background-color: #c1d72d;
+        /*centralizar a página*/
+        margin: 0 auto;
+        /*altera o display para flexbox*/
+        display: flex;
+
+        /*deixa os itens em linha (configuração padrão do flex)*/
+        flex-direction:row;
+        
+        /* alinhar intems do container na horizontal */
+        justify-content: space-between;
+
+        /*No flex-directions ROW, é o alinhamento vertical dos intens do container*/
+
+      
+    }
+
+    li {
+        /* Tira as "bolinhas" da nossa lista não ordenada*/
+        list-style-type: none;
+
+        /*altera o display, ou seja, a visualização em página do elemento. Nessa caso, colocamos elemento em linha(inline)*/
+        display: inline;
+
+        /* altera o tamanho da fonte*/
+        font-size: 0.9em;
+
+
+        font-family:Arial, Helvetica, sans-serif;
+        padding-right: 5px;
+        padding-left: 5px;
+        /*cria uma borda para o elemento. Nesse caso borda direta*/
+        border-right: 2px solid white;
+    }
+
+    nav div {
+        padding-right: 40px;
+
+    }
+
+    nav div img {
+        height: 35px;
+        padding-right: 5px;
+        /* utilizado para deixar os elementos translucidos, quanto menos % de opacidade mais transparente*/
+        opacity: 65%;
+
+    }
+
+    .localizaçao {
+        /* remove as bordad de um elemento */
+        border: none;
+    }
+    /* Esse seletor de elemento é mais específico e seleciona os links dentro das uls que pertecem á nav*/
+    nav ul a {
+        /*tira o sublinhado do link*/
+        text-decoration: none;
+
+        /*para alterar a cor do texto*/
+        color: black;
+    }
+
+    div {
+        
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/pflogo.svg" alt="logotipo">
+    </header>
+    <nav>
+        <ul>
+            <a href="http://google.com">
+            <li> História </li>
+            </a>
+            <a href="#">
+                <li>Espaço </li></a>
+            <a href="#"><li>Atividades </li></a>
+            <a href="#">
+            <li> Novidades </li></a>
+            <a href="">
+            <li class="localizaçao">Localização</li>
+            </a>
+        </ul>
+        <div>
+            <a href="#">
+             <img src="img/s_facebook.svg" alt="Facebook">
+            </a>
+             <a href="#">
+             <img src="img/s_instagram.svg" alt="Instagram">
+            </a> 
+            <a href="#">
+             <img src="img/s_youtube.svg" alt="Youtube">
+            </a> 
+        </div>
+    </nav>
+    <article>
+    </article>
+    <section>
+    </section>
+    <section>
+    </section>
+    <section>
+    </section>
+    <footer>
+    </footer>
+</body>
+
+</html>
