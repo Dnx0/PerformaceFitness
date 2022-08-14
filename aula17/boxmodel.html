@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Explicando Box Model</title>
+ 	<link rel="shortcut icon" href="/images/flavicon.ico" type="image/x-icon" />
+ 	<style type="text/css">
+ 		div { 
+ 			height: 100px;
+ 			width: 400px;
+ 			border:5px 
+ 			/*Define a borda do elemento pelo valor, nesta ordem:
+ 			1-Grossura da bora
+ 			2-Estilo da borda
+ 			3- Cor da borda*/
+ 			solid black;
+
+ 		 }
+ 		 /* o "ponto final" é o seletor de claase */
+
+ 		 .content {
+ 		 	background-color: tomato;
+ 		 	padding: 50px;
+
+ 		 }
+
+ 		 .divisao {
+ 		 	background-color: deepskyblue;
+ 		 }
+
+ 		 .caixa-border {
+ 		 	background-color: lawngreen;
+ 		 	padding: 50px;
+ 		 	box-sizing: 
+ 		 	/*ignora os tamanhos adicionais de border e padding do elemento, mantendo o width e height anteriores*/
+ 		 	border-box;
+ 		 }
+
+ 	</style>
+
+ </head>
+ <body>
+ 	<div class="content"> 
+ 		Content box- configuração padrão
+ 	</div>
+ 	<div class="divisao">
+ 		Divisão
+ 	</div>
+ 	<div class="caixa-border">
+ 		Bordex box- configuração "melhorada"
+ 	</div>
+
+ </body>
+ </html>
