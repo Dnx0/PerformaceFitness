@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstruSite</title>
+    <style type="text/css">
+    /* Paleta de cores:
+        Verde escuro: #051821
+        Verde médio: #1A4645
+        Verde claro: #266867
+        Laranja: #F58800
+        Amarelo: #F8BC24
+     */
+
+    /* início do hack para resetar margin, 
+     padding e fazer com o padding e border não
+     interfiram no tamanho total dos elementos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* fim do hack */
+
+    }
+
+    body {
+        font-family: "Oswald", sans-serif;
+
+    }
+
+    /* seletor para o header
+     cor do fundo verde escuro na paleta
+     min-heigth de 150px*/
+    header {
+        background-color: #051821;
+        min-height: 150px;
+        padding-left: 80px;
+
+
+
+    }
+
+    /* criar um seletor de link (a) colocar o display para inline */
+
+    li {
+
+        display: inline;
+
+    }
+
+
+    a {
+
+        text-decoration: none;
+        text-decoration-color: white;
+        color: white;
+        padding: 10px;
+
+    }
+
+    a:hover {
+        color: #F58800;
+
+    }
+
+    /*
+    Criar um seletor de Classe para "container-header"
+    1) deixar ele com display flex
+  */
+    .container-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: inherit;
+
+
+    }
+
+    .img-logo {
+        height: 120px;
+
+    }
+
+    article {
+        background-image: url("img/city1.jpg");
+        min-height: 400px;
+        background-size: cover;
+        /*posicionamos a imagem de fundo */
+        background-position: center;
+        color: white;
+    }
+
+    .container-article {
+        background-color: rgba(26, 70, 69, 0.6);
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    h1 {
+
+        color: #F8BC24;
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: black;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*
+    Criar um novo seletor para a classe icones
+        */
+    .icones {
+        height: 60px;
+        filter: invert(100%);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom : 30px;
+    }
+
+    .textocenter{
+        text-align: center;
+        font-size: 1.2em;
+        width: 30%;
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+           <a href="#"> <img class="img-logo" src="img/logotipo.png" alt=""> </a>
+            <ul>
+                <a href="#">
+                    <li>HOME</li>
+                </a>
+                <a href="#">
+                    <li>QUEM SOMOS</li>
+                </a>
+                <a href="#">
+                    <li>SERVIÇOS</li>
+                </a>
+                <a href="#">
+                    <li>CLIENTES</li>
+                </a>
+                <a href="#">
+                    <li>CONTATO</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <div class="container-article">
+            <h1>Sobre a ConstruSite</h1>
+            <div class="container-icones">
+                <img class="icones" src="img/home.svg" alt="">
+                <img class="icones" src="img/university.svg" alt="">
+                <img class="icones" src="img/building.svg" alt="">
+            </div>
+            <p class="textocenter">
+                Somos uma empresa séria de construção civil,
+                situada no coração da cidade de São Paulo - SP.
+                <br>
+                <br>
+                Temos por missão entregar os melhores trabalhos em
+                relação à construção civíl do estado e a visão de
+                sermos a maior construtura do Brasil.
+            </p>
+        </div>
+    </article>
+</body>
+
+</html>
